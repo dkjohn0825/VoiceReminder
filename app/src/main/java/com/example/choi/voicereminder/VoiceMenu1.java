@@ -40,7 +40,7 @@ public class VoiceMenu1 extends AppCompatActivity {
     private String global_name = "";
     private String global_id_code = "";
     public List<String> modules = new ArrayList<>();
-    private static final String SERVER_ADDRESS = "http://168.131.151.95:80";
+    private static final String SERVER_ADDRESS = "";
     String currentTime="";
     HttpClient client = new DefaultHttpClient();
 

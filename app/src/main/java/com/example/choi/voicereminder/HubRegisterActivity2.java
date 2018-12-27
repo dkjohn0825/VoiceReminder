@@ -41,7 +41,7 @@ public class HubRegisterActivity2 extends Activity {
     int mPariedDeviceCount = 0;
     Set<BluetoothDevice> mDevices;
     HttpClient client = new DefaultHttpClient();
-    private static final String SERVER_ADDRESS = "http://168.131.151.95:80";
+    private static final String SERVER_ADDRESS = "";
 
     // 폰의 블루투스 모듈을 사용하기 위한 오브젝트.
     BluetoothAdapter mBluetoothAdapter;

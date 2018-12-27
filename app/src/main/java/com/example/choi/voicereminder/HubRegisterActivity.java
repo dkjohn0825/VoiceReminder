@@ -38,7 +38,7 @@ public class HubRegisterActivity extends AppCompatActivity {
     HttpClient client = new DefaultHttpClient();
     MainMenu prev_MainMenu = (MainMenu)MainMenu.myActivity;
 
-    private static final String SERVER_ADDRESS = "http://168.131.151.95:80";
+    private static final String SERVER_ADDRESS = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

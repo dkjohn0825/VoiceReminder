@@ -51,7 +51,7 @@ public class OptionActivity extends AppCompatActivity {
     private String global_id_code = "";
     public List<String> modules = new ArrayList<>();
     HttpClient client = new DefaultHttpClient();
-    private static final String SERVER_ADDRESS = "http://168.131.151.95:80";
+    private static final String SERVER_ADDRESS = "";
     ArrayAdapter<String> OptionList,OptionList2;
     DatePickerDialog datePickerDialog;
     TimePickerDialog timePickerDialog;

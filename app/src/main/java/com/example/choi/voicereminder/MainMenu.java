@@ -79,10 +79,10 @@ public class MainMenu extends AppCompatActivity {
     int serverResponseCode = 0;
     public String value = null;
     public String nick = null;
-    String upLoadServerUri = "http://168.131.151.95:80/vr/UploadToServer.php";
+    String upLoadServerUri = "/vr/UploadToServer.php";
     public String uploadFilePath = "/sdcard/vr/";
     public static Activity myActivity;
-    private static final String SERVER_ADDRESS = "http://168.131.151.95:80";
+    private static final String SERVER_ADDRESS = "";
     Chronometer chron;
     String global_id;
     String global_name;

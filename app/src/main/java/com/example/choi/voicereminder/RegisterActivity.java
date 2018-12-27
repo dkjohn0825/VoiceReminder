@@ -23,7 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
     Button joinOK;
     EditText edtname, edtid, edtpass,edtphone;
     ProgressDialog dialog1;
-    private static final String SERVER_ADDRESS = "http://168.131.151.95:80";
+    private static final String SERVER_ADDRESS = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

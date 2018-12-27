@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity{
         try {
 
             httpclient = getThreadSafeClient();
-            httppost = new HttpPost("http://168.131.151.95:80/vr/logincheck.php");
+            httppost = new HttpPost("/vr/logincheck.php");
             nameValuePairs = new ArrayList<NameValuePair>(2);
             nameValuePairs.add(new BasicNameValuePair("id", idInput.getText().toString()));
             nameValuePairs.add(new BasicNameValuePair("password", passwordInput.getText().toString()));
