@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mod_change_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/child_margin_top">
+
+        <EditText
+            android:id="@+id/mod_change_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="모듈의 이름을 지어주세요"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mod_change_SSID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/child_margin_top">
+
+        <EditText
+            android:id="@+id/mod_change_SSID_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="모듈과 연결할 wifi(SSID) 이름 입력"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mod_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/child_margin_top">
+
+        <EditText
+            android:id="@+id/mod_change_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="wi-fi 비밀번호 입력"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

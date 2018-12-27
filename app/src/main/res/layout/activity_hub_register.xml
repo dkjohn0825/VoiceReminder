@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_voice_menu1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.choi.voicereminder.VoiceMenu1">
+
+    <TextView
+        android:id="@+id/modulePath"
+        android:textSize = "40dp"
+        android:textColor = "#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:text="모듈 목록"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/lvModuleControl"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:divider="#efeff4"
+        android:dividerHeight="1dp"
+        android:visibility="visible"
+        android:layout_below="@+id/modulePath"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"></ListView>
+
+    <TextView
+        android:id="@+id/moduleadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:drawableRight="@drawable/ic_add"
+        android:layout_above="@+id/lvModuleControl"
+        android:text="모듈 추가"
+        android:gravity="center_vertical"
+        android:textSize="24dp"
+        android:textColor="#000000"
+        android:paddingRight="10dp"
+        android:paddingTop="40dp"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>

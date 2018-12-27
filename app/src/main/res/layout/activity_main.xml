@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="com.example.choi.voicereminder.MainActivity">
+
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_new_logo"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_vrlogo"
+        android:layout_marginTop="@dimen/child_margin_top">
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_email"
+            android:hint="아이디"
+            android:textColor="@color/colorDarkGrey"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ti_email"
+        android:layout_marginTop="@dimen/child_margin_top"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/white">
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:textColor="@color/colorDarkGrey"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="로그인"
+        android:id="@+id/loginButton"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/passwordInput"
+        android:onClick="LoginClick"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:background="@color/colorAccent"
+        android:layout_toStartOf="@+id/signupButton"
+        android:paddingLeft="@dimen/button_padding"
+        style="@android:style/Widget.Button" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:drawableRight="@drawable/ic_arrow_forward"
+        android:id="@+id/signupButton"
+        android:textAllCaps="false"
+        android:onClick="SignUpClick"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/button_padding"
+        android:layout_alignEnd="@+id/passwordInput" />
+
+    <CheckBox
+        android:text="ID/PW 저장"
+        android:layout_marginTop="30dp"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorDarkGrey"
+        android:id="@+id/checkBox" />
+
+
+</LinearLayout>
+
+
+
+

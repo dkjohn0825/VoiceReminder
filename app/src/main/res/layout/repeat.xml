@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/repeat0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="반복 없음" />
+
+        <TextView
+            android:id="@+id/repeat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="매일" />
+
+        <TextView
+            android:id="@+id/repeat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="특정 요일" />
+
+        <TextView
+            android:id="@+id/repeat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="매주" />
+
+        <TextView
+            android:id="@+id/repeat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="매달" />
+
+        <TextView
+            android:id="@+id/repeat5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="매년" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/repeat_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#3a5fcd"
+        android:paddingTop="21dp"
+        android:paddingBottom="21dp"
+        android:textColor="#ffffff"
+        android:text="원하는 반복 스타일을 클릭하세요"
+        android:textSize="21dp"
+        android:layout_weight="0.18" />
+
+</LinearLayout>

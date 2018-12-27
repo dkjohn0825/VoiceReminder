@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/child_margin_top">
+
+        <EditText
+            android:id="@+id/date_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_calendar"
+            android:hint="날짜 (오른쪽 아이콘을 클릭하세요)"
+            android:inputType="number"
+             />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/child_margin_top">
+
+        <EditText
+            android:id="@+id/time_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_access_time"
+            android:hint="시간 (오른쪽 아이콘을 클릭하세요)"
+            android:inputType="number"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

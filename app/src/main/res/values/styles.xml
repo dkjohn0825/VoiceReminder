@@ -1,0 +1,45 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Main" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorDarkGrey</item>
+        <item name="colorControlNormal">@color/colorDarkGrey</item>
+        <item name="colorControlHighlight">@color/colorDarkGrey</item>
+        <item name="colorControlActivated">@color/colorDarkGrey</item>
+        <item name="colorButtonNormal">@color/colorDarkGrey</item>
+        <item name="android:textColor">@color/colorDarkGrey</item>
+        <item name="android:textColorPrimary">@color/colorDarkGrey</item>
+        <item name="android:editTextColor">@color/colorDarkGrey</item>
+    </style>
+
+    <style name="AppTheme.Profile" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorDarkGrey</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorDarkGrey</item>
+        <item name="android:itemBackground">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@android:color/black</item>
+    </style>
+
+
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+
+</resources>

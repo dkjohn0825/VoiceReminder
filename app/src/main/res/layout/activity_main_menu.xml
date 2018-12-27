@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    tools:context="com.example.choi.voicereminder.MainMenu">
+
+    <TextView
+        android:id="@+id/just_background"
+        android:layout_width="100dp"
+        android:layout_height="400dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#f3f3f3"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/play_background"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="10dp"
+        android:text="" />
+
+
+    <ImageView
+        android:id="@+id/img_vrlogo_menu"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_new_logo_short"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/ShowID"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/img_vrlogo_menu"
+        android:layout_marginBottom="19dp"
+        android:layout_toEndOf="@+id/img_vrlogo_menu"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/img_record_check"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/just_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="#00000000"
+        android:onClick="onclick_record"
+        android:paddingRight="0dp"
+        android:src="@drawable/record_check" />
+
+    <Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/just_background"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#808080"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/ic_logout"
+        android:text="로그아웃"
+        android:textColor="@android:color/white"
+        android:onClick="onclick_logout"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toEndOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/messageText1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/chronometer1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="79dp"
+        android:gravity="center"
+        android:text="녹음 버튼을 눌러 시작하세요"
+        android:textColor="#808080"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_module"
+        android:onClick="onclick3"
+        android:text="모듈 관리"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/play_background"
+        android:layout_toStartOf="@+id/button4"
+        android:background="@color/colorPrimaryDark"
+        android:drawableTop="@drawable/ic_find"
+        android:onClick="onclick2"
+        android:text="녹음목록"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/module_present2"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/ShowID"
+        android:layout_alignBottom="@+id/ShowID"
+        android:layout_alignParentEnd="true"
+        android:background="#f3f3f3"
+        android:drawableLeft="@drawable/ic_radio"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_music"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        android:layout_alignTop="@+id/play_background"
+        android:src="@drawable/ic_audiotrack" />
+
+
+    <ImageButton
+        android:id="@+id/img_play_check"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btn_logout"
+        android:layout_toStartOf="@+id/img_play_list"
+        android:background="#00000000"
+        android:onClick="onclick_play"
+        android:paddingRight="0dp"
+        android:src="@drawable/ic_playandstop" />
+
+    <ImageButton
+        android:id="@+id/img_play_list"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/img_play_check"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000"
+        android:onClick="onclick_play"
+        android:src="@drawable/ic_file_white" />
+
+    <TextView
+        android:id="@+id/play_music_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_music"
+        android:layout_toEndOf="@+id/img_vrlogo_menu"
+        android:text=""
+        android:textColor="#ffffff"
+        android:paddingTop="10dp"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
+
